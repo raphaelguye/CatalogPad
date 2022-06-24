@@ -15,7 +15,7 @@ struct RootView: View {
     } content: {
       List {
         switch menuSelected?.type {
-        case .products: ProductListView(viewModel: ProductListViewModel())
+        case .products: ProductListView() // Doesn't work as expected for the moment
         case .promos: PromoListView(viewModel: PromoListViewModel())
         case .users: UserListView(viewModel: UserListViewModel())
         default: Text("Choose a section in the sidebar")
@@ -36,7 +36,7 @@ struct RootView: View {
       case users
     }
 
-    var id: String
+    var id = UUID()
     var title: String
     var systemImage: String
 
@@ -44,9 +44,9 @@ struct RootView: View {
   }
 
   @State private var menus = [
-    Menu(id: "1", title: "Products", systemImage: "cart.circle", type: .products),
-    Menu(id: "2", title: "Promos", systemImage: "dollarsign.circle", type: .promos),
-    Menu(id: "3", title: "Users", systemImage: "person.crop.circle", type: .users),
+    Menu(title: "Products", systemImage: "cart.circle", type: .products),
+    Menu(title: "Promos", systemImage: "dollarsign.circle", type: .promos),
+    Menu(title: "Users", systemImage: "person.crop.circle", type: .users),
   ]
 
   @State private var menuSelected: Menu?

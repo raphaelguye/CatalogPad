@@ -17,6 +17,7 @@
 		533E6FB32865E52C0080F3D7 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB22865E52C0080F3D7 /* UserListViewModel.swift */; };
 		533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB72865FDBC0080F3D7 /* PromoListView.swift */; };
 		533E6FBA2865FDD10080F3D7 /* PromoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB92865FDD10080F3D7 /* PromoListViewModel.swift */; };
+		533E6FC42865FFCF0080F3D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FC32865FFCF0080F3D7 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		533E6FB22865E52C0080F3D7 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		533E6FB72865FDBC0080F3D7 /* PromoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListView.swift; sourceTree = "<group>"; };
 		533E6FB92865FDD10080F3D7 /* PromoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListViewModel.swift; sourceTree = "<group>"; };
+		533E6FC32865FFCF0080F3D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,8 @@
 		533E6FA42865E4410080F3D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				533E6FA62865E45C0080F3D7 /* List */,
-				533E6FA52865E4570080F3D7 /* Detail */,
+				533E6FC12865FF860080F3D7 /* Presentation */,
+				533E6FC02865FF810080F3D7 /* Model */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -134,8 +136,8 @@
 		533E6FAD2865E5000080F3D7 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				533E6FAF2865E50B0080F3D7 /* Detail */,
-				533E6FAE2865E5070080F3D7 /* List */,
+				533E6FBD2865FF510080F3D7 /* Model */,
+				533E6FBC2865FF490080F3D7 /* Presentation */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -159,8 +161,8 @@
 		533E6FB42865FDA10080F3D7 /* Promos */ = {
 			isa = PBXGroup;
 			children = (
-				533E6FB62865FDAD0080F3D7 /* Detail */,
-				533E6FB52865FDA70080F3D7 /* List */,
+				533E6FBF2865FF7C0080F3D7 /* Model */,
+				533E6FBE2865FF5C0080F3D7 /* Presentation */,
 			);
 			path = Promos;
 			sourceTree = "<group>";
@@ -179,6 +181,55 @@
 			children = (
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		533E6FBC2865FF490080F3D7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FAF2865E50B0080F3D7 /* Detail */,
+				533E6FAE2865E5070080F3D7 /* List */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		533E6FBD2865FF510080F3D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		533E6FBE2865FF5C0080F3D7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FB62865FDAD0080F3D7 /* Detail */,
+				533E6FB52865FDA70080F3D7 /* List */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		533E6FBF2865FF7C0080F3D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		533E6FC02865FF810080F3D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FC32865FFCF0080F3D7 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		533E6FC12865FF860080F3D7 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FA62865E45C0080F3D7 /* List */,
+				533E6FA52865E4570080F3D7 /* Detail */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +304,7 @@
 			files = (
 				533E6FBA2865FDD10080F3D7 /* PromoListViewModel.swift in Sources */,
 				533E6FA82865E4730080F3D7 /* ProductListView.swift in Sources */,
+				533E6FC42865FFCF0080F3D7 /* Product.swift in Sources */,
 				533E6FB32865E52C0080F3D7 /* UserListViewModel.swift in Sources */,
 				533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */,
 				533E6FB12865E5220080F3D7 /* UserListView.swift in Sources */,
