@@ -15,9 +15,9 @@ struct RootView: View {
     } content: {
       List {
         switch menuSelected?.type {
-        case .products: Text("Products list")
-        case .promos: Text("Promos list")
-        case .users: Text("Users list")
+        case .products: ProductListView(viewModel: ProductListViewModel())
+        case .promos: PromoListView(viewModel: PromoListViewModel())
+        case .users: UserListView(viewModel: UserListViewModel())
         default: Text("Choose a section in the sidebar")
         }
       }

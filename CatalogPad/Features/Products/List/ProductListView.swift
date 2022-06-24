@@ -1,8 +1,3 @@
-//
-// Created by Raphael Guye on 24.06.22
-// https://github.com/raphaelguye
-//
-
 import SwiftUI
 
 // MARK: - ProductListView

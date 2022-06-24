@@ -15,6 +15,8 @@
 		533E6FAC2865E4900080F3D7 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FAB2865E4900080F3D7 /* ProductListViewModel.swift */; };
 		533E6FB12865E5220080F3D7 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB02865E5220080F3D7 /* UserListView.swift */; };
 		533E6FB32865E52C0080F3D7 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB22865E52C0080F3D7 /* UserListViewModel.swift */; };
+		533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB72865FDBC0080F3D7 /* PromoListView.swift */; };
+		533E6FBA2865FDD10080F3D7 /* PromoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FB92865FDD10080F3D7 /* PromoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		533E6FAB2865E4900080F3D7 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 		533E6FB02865E5220080F3D7 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		533E6FB22865E52C0080F3D7 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		533E6FB72865FDBC0080F3D7 /* PromoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListView.swift; sourceTree = "<group>"; };
+		533E6FB92865FDD10080F3D7 /* PromoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		533E6FA32865E4350080F3D7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				533E6FB42865FDA10080F3D7 /* Promos */,
 				533E6FAD2865E5000080F3D7 /* Users */,
 				533E6FA42865E4410080F3D7 /* Products */,
 			);
@@ -145,6 +150,31 @@
 			sourceTree = "<group>";
 		};
 		533E6FAF2865E50B0080F3D7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		533E6FB42865FDA10080F3D7 /* Promos */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FB62865FDAD0080F3D7 /* Detail */,
+				533E6FB52865FDA70080F3D7 /* List */,
+			);
+			path = Promos;
+			sourceTree = "<group>";
+		};
+		533E6FB52865FDA70080F3D7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				533E6FB72865FDBC0080F3D7 /* PromoListView.swift */,
+				533E6FB92865FDD10080F3D7 /* PromoListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		533E6FB62865FDAD0080F3D7 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -221,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533E6FBA2865FDD10080F3D7 /* PromoListViewModel.swift in Sources */,
 				533E6FA82865E4730080F3D7 /* ProductListView.swift in Sources */,
 				533E6FB32865E52C0080F3D7 /* UserListViewModel.swift in Sources */,
+				533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */,
 				533E6FB12865E5220080F3D7 /* UserListView.swift in Sources */,
 				533E6FA02865E3030080F3D7 /* RootView.swift in Sources */,
 				533E6FAC2865E4900080F3D7 /* ProductListViewModel.swift in Sources */,
