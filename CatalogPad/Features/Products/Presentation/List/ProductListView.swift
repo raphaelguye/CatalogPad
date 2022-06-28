@@ -5,7 +5,6 @@ import SwiftUI
 struct ProductListView: View {
 
   @State var viewModel = ProductListViewModel()
-  @State var selectedProduct: Product?
   @Binding var itemIdSelected: UUID?
 
   var body: some View {

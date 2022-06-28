@@ -7,12 +7,15 @@ struct RootView: View {
   // MARK: Internal
 
   var body: some View {
+
     NavigationSplitView {
+
       List(menus, id: \.self, selection: $menuSelected) { menu in
         Label(menu.title, systemImage: menu.systemImage)
-
       }
+
     } content: {
+
       VStack {
         switch menuSelected?.type {
         case .products: ProductListView(itemIdSelected: $itemIdSelected)
@@ -21,15 +24,18 @@ struct RootView: View {
         default: Text("Choose a section in the sidebar")
         }
       }
+
     } detail: {
+
       VStack {
         switch menuSelected?.type {
-        case .products: Text(itemIdSelected?.uuidString ?? "Chose a product in the list") // Doesn't work as expected for the moment
+        case .products: ProductDetailView(productId: itemIdSelected)
         case .promos: Text("Promo detail")
         case .users: Text("User detail")
         default: Text("Chose an item in the list")
         }
       }
+      
     }
   }
 
