@@ -13,16 +13,23 @@ struct RootView: View {
 
       }
     } content: {
-      List {
+      VStack {
         switch menuSelected?.type {
-        case .products: ProductListView() // Doesn't work as expected for the moment
+        case .products: ProductListView(itemIdSelected: $itemIdSelected)
         case .promos: PromoListView(viewModel: PromoListViewModel())
         case .users: UserListView(viewModel: UserListViewModel())
         default: Text("Choose a section in the sidebar")
         }
       }
     } detail: {
-      Text("Detail")
+      VStack {
+        switch menuSelected?.type {
+        case .products: Text(itemIdSelected?.uuidString ?? "Chose a product in the list") // Doesn't work as expected for the moment
+        case .promos: Text("Promo detail")
+        case .users: Text("User detail")
+        default: Text("Chose an item in the list")
+        }
+      }
     }
   }
 
@@ -50,6 +57,7 @@ struct RootView: View {
   ]
 
   @State private var menuSelected: Menu?
+  @State private var itemIdSelected: UUID?
 
 }
 
