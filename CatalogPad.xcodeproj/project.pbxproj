@@ -108,10 +108,10 @@
 		533E6F9E2865E2960080F3D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				533E6F8D2865E0720080F3D7 /* CatalogPadApp.swift */,
-				53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */,
 				53C8C1CE2873039A008B14E1 /* Model */,
 				533E6F9B2865E26B0080F3D7 /* Views */,
+				533E6F8D2865E0720080F3D7 /* CatalogPadApp.swift */,
+				53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 		533E6FA32865E4350080F3D7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				533E6FA42865E4410080F3D7 /* Products */,
 				533E6FB42865FDA10080F3D7 /* Promos */,
 				533E6FAD2865E5000080F3D7 /* Users */,
-				533E6FA42865E4410080F3D7 /* Products */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -129,9 +129,9 @@
 		533E6FA42865E4410080F3D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				533E6FC02865FF810080F3D7 /* Model */,
 				53C8C1C02872D3BC008B14E1 /* Services */,
 				533E6FC12865FF860080F3D7 /* Presentation */,
-				533E6FC02865FF810080F3D7 /* Model */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -157,7 +157,6 @@
 		533E6FAD2865E5000080F3D7 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				533E6FBD2865FF510080F3D7 /* Model */,
 				533E6FBC2865FF490080F3D7 /* Presentation */,
 			);
 			path = Users;
@@ -183,7 +182,6 @@
 		533E6FB42865FDA10080F3D7 /* Promos */ = {
 			isa = PBXGroup;
 			children = (
-				533E6FBF2865FF7C0080F3D7 /* Model */,
 				533E6FBE2865FF5C0080F3D7 /* Presentation */,
 			);
 			path = Promos;
@@ -215,13 +213,6 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		533E6FBD2865FF510080F3D7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		533E6FBE2865FF5C0080F3D7 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,13 +220,6 @@
 				533E6FB52865FDA70080F3D7 /* List */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		533E6FBF2865FF7C0080F3D7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		533E6FC02865FF810080F3D7 /* Model */ = {
