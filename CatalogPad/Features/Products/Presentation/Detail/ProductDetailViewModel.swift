@@ -1,11 +1,12 @@
 import Foundation
+import Resolver
 
 class ProductDetailViewModel: ObservableObject {
 
-  // MARK: Internal
-
   @Published var product: Product?
   @Published var isLoading = false
+
+  @Injected var productService: ProductService
 
   func loadProduct(_ productId: UUID?) {
     guard let productId = productId else { return }
@@ -21,9 +22,5 @@ class ProductDetailViewModel: ObservableObject {
       }
     }
   }
-
-  // MARK: Private
-
-  private var productService = ProductService()
 
 }

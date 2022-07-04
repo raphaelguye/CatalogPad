@@ -21,6 +21,8 @@
 		533E6FC42865FFCF0080F3D7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533E6FC32865FFCF0080F3D7 /* Product.swift */; };
 		53C8C1BF2872CF33008B14E1 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1BE2872CF33008B14E1 /* ProductDetailViewModel.swift */; };
 		53C8C1C22872D3C8008B14E1 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1C12872D3C8008B14E1 /* ProductService.swift */; };
+		53C8C1C52872FCAF008B14E1 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 53C8C1C42872FCAF008B14E1 /* Resolver */; };
+		53C8C1C72872FCDF008B14E1 /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		533E6FC32865FFCF0080F3D7 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		53C8C1BE2872CF33008B14E1 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
 		53C8C1C12872D3C8008B14E1 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Injection.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C8C1C52872FCAF008B14E1 /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 			children = (
 				533E6F8D2865E0720080F3D7 /* CatalogPadApp.swift */,
 				533E6F9B2865E26B0080F3D7 /* Views */,
+				53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -265,6 +270,9 @@
 			dependencies = (
 			);
 			name = CatalogPad;
+			packageProductDependencies = (
+				53C8C1C42872FCAF008B14E1 /* Resolver */,
+			);
 			productName = CatalogPad;
 			productReference = 533E6F8A2865E0720080F3D7 /* CatalogPad.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 533E6F812865E0720080F3D7;
+			packageReferences = (
+				53C8C1C32872FCAF008B14E1 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = 533E6F8B2865E0720080F3D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +339,7 @@
 				53C8C1BF2872CF33008B14E1 /* ProductDetailViewModel.swift in Sources */,
 				533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */,
 				533E6FB12865E5220080F3D7 /* UserListView.swift in Sources */,
+				53C8C1C72872FCDF008B14E1 /* Resolver+Injection.swift in Sources */,
 				533E6FA02865E3030080F3D7 /* RootView.swift in Sources */,
 				533E6FAC2865E4900080F3D7 /* ProductListViewModel.swift in Sources */,
 				533E6F8E2865E0720080F3D7 /* CatalogPadApp.swift in Sources */,
@@ -531,6 +543,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		53C8C1C32872FCAF008B14E1 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		53C8C1C42872FCAF008B14E1 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53C8C1C32872FCAF008B14E1 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 533E6F822865E0720080F3D7 /* Project object */;
 }

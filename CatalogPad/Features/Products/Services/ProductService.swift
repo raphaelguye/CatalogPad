@@ -1,6 +1,15 @@
 import Foundation
 
-struct ProductService {
+// MARK: - ProductService
+
+protocol ProductService {
+  func fetchProducts() async throws -> [Product]
+  func fetchProduct(productId: UUID) async throws -> Product?
+}
+
+// MARK: - FakeProductService
+
+struct FakeProductService : ProductService {
 
   private var products: [Product] = [
     Product(id: UUID(), title: "Product A", description: "Description of product A", price: 19.90),

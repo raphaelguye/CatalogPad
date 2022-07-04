@@ -1,4 +1,5 @@
 import Foundation
+import Resolver
 
 class ProductListViewModel: ObservableObject {
 
@@ -12,9 +13,9 @@ class ProductListViewModel: ObservableObject {
 
   @Published var products: [Product]?
 
-  // MARK: Private
+  @Injected var productService: ProductService
 
-  private var productService = ProductService()
+  // MARK: Private
 
   private func loadProducts() {
     Task {
