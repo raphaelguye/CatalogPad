@@ -30,8 +30,8 @@ struct RootView: View {
       VStack {
         switch menuSelected?.type {
         case .products: ProductDetailView(productId: itemIdSelected)
-        case .promos: Text("Promo detail")
-        case .users: Text("User detail")
+        case .promos: PromoDetailView()
+        case .users: UserDetailView()
         default: Text("Chose an item in the list")
         }
       }

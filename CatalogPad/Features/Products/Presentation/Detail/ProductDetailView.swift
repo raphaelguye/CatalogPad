@@ -16,23 +16,27 @@ struct ProductDetailView: View {
   @ObservedObject var viewModel = ProductDetailViewModel() // Should be a StateObject, but doesn't work
 
   var body: some View {
-    VStack {
-      if viewModel.product != nil {
-        Text(viewModel.product!.id.uuidString)
-        Text(viewModel.product!.title)
-        Text(viewModel.product!.description)
-        Text("USD \(viewModel.product!.price)")
-      } else if viewModel.isLoading {
-        ProgressView()
-      } else {
-        Text("No products have been selected")
-      }
+    if viewModel.product != nil {
+      productContent
+    } else if viewModel.isLoading {
+      ProgressView()
+    } else {
+      Text("No products have been selected")
     }
   }
 
   // MARK: Private
 
   private var productId: UUID?
+
+  private var productContent: some View {
+    VStack {
+      Text(viewModel.product!.id.uuidString).font(.caption)
+      Text(viewModel.product!.title).font(.title)
+      Text(viewModel.product!.description).font(.title3)
+      Text(viewModel.product!.priceFormatted).font(.title3)
+    }
+  }
 
 }
 
