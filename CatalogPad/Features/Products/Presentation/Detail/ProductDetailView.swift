@@ -4,15 +4,15 @@ import SwiftUI
 
 struct ProductDetailView: View {
 
-  var productId: UUID?
+  @ObservedObject var viewModel = ProductDetailViewModel()
 
   init(productId: UUID?) {
-    self.productId = productId
+    viewModel.loadProduct(productId: productId)
   }
 
   var body: some View {
-    if productId != nil {
-      Text("You have selected product id \(productId!.uuidString)")
+    if viewModel.product != nil {
+      Text("You have selected product id \(viewModel.product!.id)")
     } else {
       Text("No products have been selected")
     }
