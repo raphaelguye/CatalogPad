@@ -2,11 +2,28 @@ import Foundation
 
 class ProductDetailViewModel: ObservableObject {
 
-  @Published var product: Product?
+  // MARK: Internal
 
-  func loadProduct(productId: UUID?) {
+  @Published var product: Product?
+  @Published var isLoading = false
+
+  func loadProduct(_ productId: UUID?) {
     guard let productId = productId else { return }
-    product = Product(title: "The title of \(productId)", description: "The desc", price: 42.0)
+    Task {
+      await MainActor.run {
+        Task {
+          isLoading = true
+          do {
+            self.product = try await productService.fetchProduct(productId: productId)
+          } catch {}
+          isLoading = false
+        }
+      }
+    }
   }
+
+  // MARK: Private
+
+  private var productService = ProductService()
 
 }

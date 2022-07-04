@@ -17,7 +17,7 @@ struct ProductService {
 
   func fetchProduct(productId: UUID) async throws -> Product? {
     try await Task.sleep(nanoseconds: 500_000_000)
-    return products.filter({ $0.id == productId }).first
+    return products.first(where: { $0.id == productId })
   }
 
 }
