@@ -30,7 +30,7 @@ struct ProductDetailView: View {
   private var productId: UUID?
 
   private var productContent: some View {
-    VStack {
+    VStack(alignment: .leading) {
       Text(viewModel.product!.id.uuidString).font(.caption)
       Text(viewModel.product!.title).font(.title)
       Text(viewModel.product!.description).font(.title3)

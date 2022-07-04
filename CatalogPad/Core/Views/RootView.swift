@@ -27,13 +27,17 @@ struct RootView: View {
 
     } detail: {
 
-      VStack {
-        switch sectionSelected?.type {
-        case .products: ProductDetailView(productId: detailItemIdSelected)
-        case .promos: PromoDetailView()
-        case .users: UserDetailView()
-        default: Text("Chose an item in the list")
-        }
+      HStack {
+        VStack {
+          switch sectionSelected?.type {
+          case .products: ProductDetailView(productId: detailItemIdSelected)
+          case .promos: PromoDetailView()
+          case .users: UserDetailView()
+          default: Text("Chose an item in the list")
+          }
+          Spacer()
+        }.padding()
+        Spacer()
       }
 
     }
