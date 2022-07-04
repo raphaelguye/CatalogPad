@@ -25,6 +25,7 @@
 		53C8C1C72872FCDF008B14E1 /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */; };
 		53C8C1C92873018D008B14E1 /* PromoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1C82873018D008B14E1 /* PromoDetailView.swift */; };
 		53C8C1CB287301BD008B14E1 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1CA287301BD008B14E1 /* UserDetailView.swift */; };
+		53C8C1CD28730242008B14E1 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8C1CC28730242008B14E1 /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Injection.swift"; sourceTree = "<group>"; };
 		53C8C1C82873018D008B14E1 /* PromoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoDetailView.swift; sourceTree = "<group>"; };
 		53C8C1CA287301BD008B14E1 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		53C8C1CC28730242008B14E1 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				533E6F8D2865E0720080F3D7 /* CatalogPadApp.swift */,
-				533E6F9B2865E26B0080F3D7 /* Views */,
 				53C8C1C62872FCDF008B14E1 /* Resolver+Injection.swift */,
+				53C8C1CE2873039A008B14E1 /* Model */,
+				533E6F9B2865E26B0080F3D7 /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -260,6 +263,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		53C8C1CE2873039A008B14E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53C8C1CC28730242008B14E1 /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -346,6 +357,7 @@
 				53C8C1BF2872CF33008B14E1 /* ProductDetailViewModel.swift in Sources */,
 				533E6FB82865FDBC0080F3D7 /* PromoListView.swift in Sources */,
 				533E6FB12865E5220080F3D7 /* UserListView.swift in Sources */,
+				53C8C1CD28730242008B14E1 /* Section.swift in Sources */,
 				53C8C1C72872FCDF008B14E1 /* Resolver+Injection.swift in Sources */,
 				533E6FA02865E3030080F3D7 /* RootView.swift in Sources */,
 				533E6FAC2865E4900080F3D7 /* ProductListViewModel.swift in Sources */,
