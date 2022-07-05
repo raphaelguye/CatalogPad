@@ -34,4 +34,4 @@ The [RootView](https://github.com/raphaelguye/CatalogPad/blob/main/CatalogPad/Co
     }
     
 ## Sections
-The sections are defined by a [static list](https://github.com/raphaelguye/CatalogPad/blob/main/CatalogPad/Core/Model/Section.swift#L21) and are used directly by the [RootView](https://github.com/raphaelguye/CatalogPad/blob/main/CatalogPad/Core/Views/RootView.swift#L44).
+The sections are defined by a [static list](https://github.com/raphaelguye/CatalogPad/blob/main/CatalogPad/Core/Model/Section.swift#L21) and are used directly by the [RootView](https://github.com/raphaelguye/CatalogPad/blob/main/CatalogPad/Core/Views/RootView.swift#L48).
